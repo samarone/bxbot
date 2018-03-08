@@ -39,6 +39,7 @@ Sample config below currently set to run against Huobi.
             <name>secret</name>
             <value>your-secret</value>
         </config-item>
+        <!-- IF True, yours orders will are fake using newOrderTest into API, for production change to False -->
         <config-item>
 			<name>simulate-mode</name>
 			<value>true</value>

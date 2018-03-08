@@ -47,6 +47,7 @@ ext.libraries = [
         google_gson: dependencies.create("com.google.code.gson:gson:2.8.2"),
         javax_mail_api: dependencies.create("javax.mail:javax.mail-api:1.6.0"),
         javax_mail_sun: dependencies.create("com.sun.mail:javax.mail:1.6.0"),
+        binance_java_api: dependencies.create("com.binance.api:binance-api-client:1.0.0"),
 
         junit: dependencies.create("junit:junit:4.12"),
         powermock_junit: dependencies.create("org.powermock:powermock-module-junit4:1.7.3"),

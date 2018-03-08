@@ -83,7 +83,7 @@ elementary and needs further development.
 
 BX-bot requires a Java 8 JDK ([openjdk-8-jdk](http://openjdk.java.net/install/) or 
 [Oracle JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html))
-to be installed on the machine you are going to use to build the bot.     
+to be installed on the machine you are going to use to build the bot.
 
 You can use [Maven](https://maven.apache.org) or [Gradle](https://gradle.org/) to build the bot and distribution artifact.
 The instructions below are for Linux and macOS, but equivalent Windows scripts are included. 
@@ -134,11 +134,18 @@ environment.
 
 You can use [Maven](https://maven.apache.org) or [Gradle](https://gradle.org/) to build the bot and pull down the dependencies;
 BX-bot depends on [log4j](http://logging.apache.org/log4j), [JavaMail](https://java.net/projects/javamail/pages/Home),
-[Google Gson](https://code.google.com/p/google-gson/), [Google Guava](https://github.com/google/guava), and 
-[Spring Boot](http://projects.spring.io/spring-boot/).
+[Google Gson](https://code.google.com/p/google-gson/), [Google Guava](https://github.com/google/guava), 
+[Spring Boot](http://projects.spring.io/spring-boot/) and [Binance Java API](https://github.com/binance-exchange/binance-java-api).
 See the Maven [`pom.xml`](./pom.xml) for details.
 
 The instructions below are for Linux and macOS, but equivalent Windows scripts are included.
+
+### Build Binance Java API
+
+1. Clone the [repo](https://github.com/binance-exchange/binance-java-api) locally (master branch).
+1. From the project root, run `./mvnw clean install`.
+
+**NOTE:** The library is not available in public maven repositories, so we need to build and install this dependency locally, unfortunately it is the safest way to use it. Maven method is the only one available.
 
 ### Maven
 1. Clone the repo locally (master branch).

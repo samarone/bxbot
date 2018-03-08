@@ -14,13 +14,13 @@ Multiple market elements can be listed.
         <!--
         The <id> value is the market id as defined on the exchange, e.g. 'btcusd'.
         -->
-        <id>ethbtc</id>
+        <id>btcusdt</id>
 
         <!--
         A friendly name for the market. The is used in the logs and by BX-bot UI to display the market's name.
         Value must be an alphanumeric string. Spaces are allowed. E.g. BTC/USD
         -->
-        <name>ETC/BTC</name>
+        <name>BTC/USDT</name>
 
         <!--
         The <base-currency> value is the currency short code for the base currency in the currency pair. When you buy or sell a
@@ -28,13 +28,13 @@ Multiple market elements can be listed.
         selling. E.g. in a BTC/USD market, the first currency (BTC) is the base currency and the second currency (USD) is the
         counter currency.
         -->
-        <base-currency>ETH</base-currency>
+        <base-currency>BTC</base-currency>
 
         <!--
         The <counter-currency> value is the currency short code for the counter currency in the currency pair. This is also known
         as the quote currency.
         -->
-        <counter-currency>BTC</counter-currency>
+        <counter-currency>USDT</counter-currency>
 
         <!--
         The <enabled> value allows you toggle trading on the market - config changes are only applied on startup.
@@ -45,6 +45,24 @@ Multiple market elements can be listed.
         The <trading-strategy-id> value must match a strategy <id> defined in your strategies.xml config. Currently, BX-bot only
         supports 1 <strategy> per <market>.
         -->
+        <trading-strategy-id>scalping-strategy</trading-strategy-id>
+    </market>
+
+    <!-- <market>
+        <id>ltcusd</id>
+        <name>LTC/BTC</name>
+        <base-currency>LTC</base-currency>
+        <counter-currency>BTC</counter-currency>
+        <enabled>false</enabled>
+        <trading-strategy-id>scalping-strategy</trading-strategy-id>
+    </market>  -->
+
+    <market>
+        <id>USDTBTC</id>
+        <name>USDT/BTC</name>
+        <base-currency>USDT</base-currency>
+        <counter-currency>BTC</counter-currency>
+        <enabled>true</enabled>
         <trading-strategy-id>scalping-strategy</trading-strategy-id>
     </market>
 

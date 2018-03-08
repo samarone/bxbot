@@ -34,7 +34,7 @@ Only 1 engine element can be specified.
     the trading drops below this value, the Trading Engine will stop trading on all markets and shutdown.
     Manual intervention is then required to restart the bot. You can set this value to 0 to override this check.
     -->
-    <emergency-stop-balance>100</emergency-stop-balance>
+    <emergency-stop-balance>1000</emergency-stop-balance>
 
     <!--
     The <trade-cycle-interval> value is the interval in seconds that the Trading Engine will wait/sleep before executing
@@ -43,5 +43,5 @@ Only 1 engine element can be specified.
     hit it too hard - you cannot perform low latency trading over the public internet ;-)
     You'll need to experiment with the trade cycle interval for different exchanges.
     -->
-    <trade-cycle-interval>10</trade-cycle-interval>
+    <trade-cycle-interval>20</trade-cycle-interval>
 </engine>

@@ -364,10 +364,11 @@ public class ExampleScalpingStrategy implements TradingStrategy {
                  * exchange...
                  */
                 LOG.info(() -> market.getName() + " Percentage profit (in decimal) to make for the sell order is: "
-                        + minimumPercentageGain);
+                        + new DecimalFormat("#.########").format(minimumPercentageGain));
 
                 final BigDecimal amountToAdd = lastOrder.price.multiply(minimumPercentageGain);
-                LOG.info(() -> market.getName() + " Amount to add to last buy order fill price: " + amountToAdd);
+                LOG.info(() -> market.getName() + " Amount to add to last buy order fill price: " 
+                		+ new DecimalFormat("#.########").format(amountToAdd));
 
                 /*
                  * Most exchanges (if not all) use 8 decimal places.
